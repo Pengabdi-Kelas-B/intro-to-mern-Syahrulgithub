@@ -40,16 +40,7 @@ async function main() {
       const data = JSON.parse(fs.readFileSync("seed.json", "utf-8"));
 
       for (const item of data) {
-        //const movieModel = new Model()
-        //movieModel.title = movie.title
-        //movieModel.year = movie.year
-        //movieModel.genre = movie.genre
-        //movieModel.description = movie.description
-        //movieModel.director = movie.director
-        //movieModel.cast = movie.cast
-
-        //await movieModel.save()
-
+        
         await Model.create({
           title: title.title,
           year: title.year,
